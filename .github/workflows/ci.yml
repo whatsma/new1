@@ -30,8 +30,7 @@ jobs:
       with:
         php-version: ${{ matrix.php-versions }}
         coverage: none
-        #tools: phpunit:${{ matrix.phpunit-versions }}
-        tools: phpunit
+        tools: phpunit:${{ matrix.phpunit-versions }}
 
     - name: Run phpunit
       run: composer exec phpunit
