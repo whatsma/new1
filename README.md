@@ -10,7 +10,7 @@ PHP calculator to calculate the zodiac sign for a given day and month.
 https://github.com/whatsma/new1/actions/workflows/ci.yml/badge.svg
 
 ![example workflow](https://github.com/whatsma/new1/actions/workflows/ci.yml/badge.svg)
-[![example workflow]](https://github.com/whatsma/new1/actions/workflows/ci.yml/badge.svg)
+[![example workflow](https://github.com/whatsma/new1/actions/workflows/ci.yml/badge.svg)
 
 
 [![Test Coverage](https://codeclimate.com/github/whatsma/ZodiacSign/badges/coverage.svg)](https://codeclimate.com/github/whatsma/ZodiacSign/coverage)
