@@ -38,5 +38,5 @@ jobs:
     - name: Run phpunit --version
       run: composer exec phpunit -- --version
 
-    - name: Run phpunit
+    - name: Run phpunit 
       run: composer exec phpunit
