@@ -14,18 +14,19 @@ jobs:
         operating-system: ['ubuntu-latest'] # ['ubuntu-latest', 'windows-latest', 'macos-latest']
         php-versions: ['8.1'] # ['7.2', '7.3', '7.4', '8.0', '8.1']
         phpunit-versions: ['latest']
-        include:
-        - operating-system: 'ubuntu-latest'
-          php-versions: '7.2'
-          phpunit-versions: '8.5.21'
+        #include:
+        #- operating-system: 'ubuntu-latest'
+        #  php-versions: '7.2'
+        #  phpunit-versions: '8.5.21'
     steps:
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
       with:
         php-version: ${{ matrix.php-versions }}
         coverage: xdebug
-        tools: phpunit:${{ matrix.phpunit-versions }}
+        #tools: phpunit:${{ matrix.phpunit-versions }}
+        tools: phpunit
     - name: uname
       run: php -r 'echo php_uname();'
     - name: phpunit
-      run: ./vendor/bin/phpunit
+      run: ./phpunit
