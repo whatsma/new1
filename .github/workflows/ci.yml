@@ -1,4 +1,4 @@
-name: PHP CI 
+name: CI 
 
 on:
   push:
@@ -11,8 +11,8 @@ jobs:
     runs-on: ${{ matrix.operating-system }}
     strategy:
       matrix:
-        operating-system: ['ubuntu-latest', 'windows-latest', 'macos-latest']
-        php-versions: ['7.2', '7.3', '7.4', '8.0', '8.1']
+        operating-system: ['ubuntu-latest'] # ['ubuntu-latest', 'windows-latest', 'macos-latest']
+        php-versions: ['8.1'] # ['7.2', '7.3', '7.4', '8.0', '8.1']
         phpunit-versions: ['latest']
         include:
         - operating-system: 'ubuntu-latest'
@@ -23,9 +23,8 @@ jobs:
       uses: shivammathur/setup-php@v2
       with:
         php-version: ${{ matrix.php-versions }}
-        ini-values: post_max_size=256M, max_execution_time=180
         coverage: xdebug
-        tools: php-cs-fixer, phpunit:${{ matrix.phpunit-versions }}
+        tools: phpunit:${{ matrix.phpunit-versions }}
     - name: uname
       run: php -r 'echo php_uname();'
     - name: phpunit

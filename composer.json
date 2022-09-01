@@ -3,6 +3,9 @@
     "description": "Calculates the zodiac sign for a given day and month.",
     "type": "package",
     "license": "MIT",
+    "scripts": {
+        "test": "phpunit"
+    },
     "keywords": ["zodiac sign" , "sun sign", "star sign", "astrological sign"],
     "authors": [
         {
