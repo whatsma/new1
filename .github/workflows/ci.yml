@@ -22,13 +22,13 @@ jobs:
     - name: ls 1
       run: ls
 
-    - name: Checkout
+    - name: Checkout Action
       uses: actions/checkout@v3
 
     - name: ls 1a
       run: ls
 
-    - name: Composer
+    - name: Composer Action
     - uses: php-actions/composer@v6
 
     - name: ls 2
@@ -45,5 +45,5 @@ jobs:
     - name: ls 3
       run: ls
 
-    - name: phpunit
+    - name: Run phpunit
       run: composer exec phpunit
