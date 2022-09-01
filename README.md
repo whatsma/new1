@@ -2,12 +2,6 @@
 PHP calculator to calculate the zodiac sign for a given day and month.
 
 
-
-
-[![Latest Stable Version](http://poser.pugx.org/whatsma/ZodiacSign/v)](https://packagist.org/packages/whatsma/ZodiacSign) [![Total Downloads](http://poser.pugx.org/whatsma/ZodiacSign/downloads)](https://packagist.org/packages/whatsma/ZodiacSign) [![Latest Unstable Version](http://poser.pugx.org/whatsma/ZodiacSign/v/unstable)](https://packagist.org/packages/whatsma/ZodiacSign) [![License](http://poser.pugx.org/whatsma/ZodiacSign/license)](https://packagist.org/packages/whatsma/ZodiacSign) [![PHP Version Require](http://poser.pugx.org/whatsma/ZodiacSign/require/php)](https://packagist.org/packages/whatsma/ZodiacSign)
-
-
-
 ## Status
 
 [![Total Downloads](https://poser.pugx.org/whatsma/zodiacsign/downloads)](https://packagist.org/packages/whatsma/zodiacsign)
