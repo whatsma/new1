@@ -18,7 +18,7 @@ jobs:
         include:
         - operating-system: 'ubuntu-latest'
           php-versions: '7.2'
-          phpunit-versions: '8.5.21'
+          phpunit-versions: 8
     steps:
     - name: Checkout Action
       uses: actions/checkout@v3
@@ -34,6 +34,9 @@ jobs:
         php-version: ${{ matrix.php-versions }}
         coverage: none
         tools: phpunit:${{ matrix.phpunit-versions }}
+
+    - name: Run phpunit --version
+      run: composer exec phpunit -- --version
 
     - name: Run phpunit
       run: composer exec phpunit
