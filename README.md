@@ -1,12 +1,21 @@
 # ZodiacSign
 PHP calculator to calculate the zodiac sign for a given day and month.
 
+
+
+
+[![Latest Stable Version](http://poser.pugx.org/whatsma/new1/v)](https://packagist.org/packages/whatsma/new1) [![Total Downloads](http://poser.pugx.org/whatsma/new1/downloads)](https://packagist.org/packages/whatsma/new1) [![Latest Unstable Version](http://poser.pugx.org/whatsma/new1/v/unstable)](https://packagist.org/packages/whatsma/new1) [![License](http://poser.pugx.org/whatsma/new1/license)](https://packagist.org/packages/whatsma/new1) [![PHP Version Require](http://poser.pugx.org/whatsma/new1/require/php)](https://packagist.org/packages/whatsma/new1)
+
+
+
 ## Status
 
 [![Total Downloads](https://poser.pugx.org/whatsma/zodiacsign/downloads)](https://packagist.org/packages/whatsma/zodiacsign)
 [![Latest Stable Version](https://poser.pugx.org/whatsma/zodiacsign/v/stable)](https://packagist.org/packages/whatsma/zodiacsign)
 
 ![Continuous Integration](https://github.com/whatsma/new1/actions/workflows/ci.yml/badge.svg)
+
+[![PHP Version Require](http://poser.pugx.org/whatsma/new1/require/php)](https://packagist.org/packages/whatsma/new1)
 
 
 [![Test Coverage](https://codeclimate.com/github/whatsma/ZodiacSign/badges/coverage.svg)](https://codeclimate.com/github/whatsma/ZodiacSign/coverage)
