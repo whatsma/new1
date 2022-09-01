@@ -39,8 +39,7 @@ jobs:
       with:
         php-version: ${{ matrix.php-versions }}
         coverage: xdebug
-        #tools: phpunit:${{ matrix.phpunit-versions }}
-        tools: phpunit
+        tools: phpunit:${{ matrix.phpunit-versions }}
 
     - name: ls 3
       run: ls
