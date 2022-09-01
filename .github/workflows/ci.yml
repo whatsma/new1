@@ -13,7 +13,7 @@ jobs:
       fail-fast: false
       matrix:
         operating-system: ['ubuntu-latest'] # ['ubuntu-latest', 'windows-latest', 'macos-latest']
-        php-versions: ['7.3', '7.4', '8.0', '8.1']
+        php-versions: [ 8.1 ] #['7.3', '7.4', '8.0', '8.1']
         phpunit-versions: ['latest']
         include:
         - operating-system: 'ubuntu-latest'
@@ -38,5 +38,5 @@ jobs:
     - name: Run phpunit --version
       run: composer exec phpunit -- --version
 
-    - name: Run phpunit 
+    - name: Run phpunit
       run: composer exec phpunit
