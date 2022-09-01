@@ -6,8 +6,8 @@ PHP calculator to calculate the zodiac sign for a given day and month.
 [![Total Downloads](https://poser.pugx.org/whatsma/zodiacsign/downloads)](https://packagist.org/packages/whatsma/zodiacsign)
 [![Latest Stable Version](https://poser.pugx.org/whatsma/zodiacsign/v/stable)](https://packagist.org/packages/whatsma/zodiacsign)
 
-[![Linux Build Status](https://img.shields.io/travis/whatsma/ZodiacSign/master.svg?label=unix%20build)](https://travis-ci.org/whatsma/ZodiacSign)
-[![Windows Build Status](https://img.shields.io/appveyor/ci/whatsma/ZodiacSign/master.svg?label=windows%20build)](https://ci.appveyor.com/project/whatsma/zodiacsign)
+
+https://github.com/whatsma/new1/actions/workflows/ci.yml/badge.svg
 
 [![Test Coverage](https://codeclimate.com/github/whatsma/ZodiacSign/badges/coverage.svg)](https://codeclimate.com/github/whatsma/ZodiacSign/coverage)
 [![Code Climate](https://codeclimate.com/github/whatsma/ZodiacSign/badges/gpa.svg)](https://codeclimate.com/github/whatsma/ZodiacSign)
@@ -16,7 +16,12 @@ PHP calculator to calculate the zodiac sign for a given day and month.
 [![GitHub license](https://img.shields.io/github/license/whatsma/ZodiacSign.svg)](https://github.com/whatsma/ZodiacSign/blob/master/LICENSE)
 
 
-## Tested with PHP Versions
+## OLD - status
+[![Linux Build Status](https://img.shields.io/travis/whatsma/ZodiacSign/master.svg?label=unix%20build)](https://travis-ci.org/whatsma/ZodiacSign)
+[![Windows Build Status](https://img.shields.io/appveyor/ci/whatsma/ZodiacSign/master.svg?label=windows%20build)](https://ci.appveyor.com/project/whatsma/zodiacsign)
+
+
+## Tested PHP Versions
 
 * 5.6 / 7.0 / 7.1 / 7.2 / 7.3 / 7.4 / 8.0 / 8.1
 
