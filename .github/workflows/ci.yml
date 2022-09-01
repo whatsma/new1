@@ -44,6 +44,3 @@ jobs:
 
     - name: ls 3
       run: ls
-
-    - name: Run phpunit
-      run: composer exec phpunit
