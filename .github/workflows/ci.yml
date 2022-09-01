@@ -19,31 +19,19 @@ jobs:
         #  php-versions: '7.2'
         #  phpunit-versions: '8.5.21'
     steps:
-    - name: ls 1
-      run: ls
-
     - name: Checkout Action
       uses: actions/checkout@v3
 
-    - name: ls 1a
-      run: ls
-
     - name: Composer Action
       uses: php-actions/composer@v6
-
-    - name: ls 2
-      run: ls
 
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
       with:
         php-version: ${{ matrix.php-versions }}
-        coverage: xdebug
+        coverage: none
         #tools: phpunit:${{ matrix.phpunit-versions }}
         tools: phpunit
-
-    - name: ls 3
-      run: ls
 
     - name: Run phpunit
       run: composer exec phpunit
