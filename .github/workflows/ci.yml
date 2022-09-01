@@ -10,6 +10,7 @@ jobs:
   run:
     runs-on: ${{ matrix.operating-system }}
     strategy:
+      fail-fast: false
       matrix:
         operating-system: ['ubuntu-latest'] # ['ubuntu-latest', 'windows-latest', 'macos-latest']
         php-versions: ['7.2', '7.3', '7.4', '8.0', '8.1']
