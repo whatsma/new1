@@ -18,6 +18,11 @@ jobs:
     - name: Checkout Action
       uses: actions/checkout@v3
 
+    - name: Composer Action
+      uses: php-actions/composer@v6
+      with:
+        dev: no
+
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
       with:
