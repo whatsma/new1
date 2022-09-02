@@ -81,7 +81,7 @@ try {
     echo "ERROR: Invalid Month";
 }
 
-// expected output: "leo"
+// output: "leo"
 ```
 
 ## ZodiacSign Calculator in the wild
