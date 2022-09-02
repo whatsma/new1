@@ -1,4 +1,4 @@
-name: CI 
+name: Unit Tests: Multi Operating Systems
 
 on:
   push:
