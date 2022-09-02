@@ -1,4 +1,4 @@
-name: Unit Tests: Multi PHP Versions
+name: Unit Tests - Multi PHP Versions
 
 on:
   push:
