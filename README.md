@@ -80,6 +80,8 @@ try {
 } catch (ZodiacSign\InvalidMonthException $e) {
     echo "ERROR: Invalid Month";
 }
+
+// expected output: "leo"
 ```
 
 ## ZodiacSign Calculator in the wild
