@@ -4,8 +4,8 @@
        width="400" />
 </p>
 
-# Zodiac Sign
-PHP calculator to calculate the zodiac sign for a given day and month.
+# Zodiac Sign Calculator
+A PHP calculator to calculate the zodiac sign for a given day and month.
 
 
 ## Status
@@ -84,7 +84,7 @@ try {
 // output: "leo"
 ```
 
-## ZodiacSign Calculator in the wild
+## Zodiac Sign Calculator in the wild
 
 * [Sun Sign Calculator](https://www.sunsigncalculator.com)
 * [What Zodiac Sign Am I?](https://www.whatzodiacsignami.com)
