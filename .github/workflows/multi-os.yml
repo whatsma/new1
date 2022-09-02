@@ -18,11 +18,6 @@ jobs:
     - name: Checkout Action
       uses: actions/checkout@v3
 
-    - name: Composer Action
-      uses: php-actions/composer@v6
-      with:
-        dev: no
-
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
       with:
@@ -30,15 +25,10 @@ jobs:
         coverage: none
         tools: phpunit
 
-    - name: Run ls
-      run: ls
-
-    - name: Run cat DOCKER_ENV
-      run: cat DOCKER_ENV
-
-    - name: Run cat output.log
-      run: cat output.log
-
+    - name: Install composer
+    - run: |
+        php -r "readfile('https://getcomposer.org/installer');"
+        php composer.phar install --prefer-dist --no-interaction
 
     - name: Run phpunit
       run: phpunit
