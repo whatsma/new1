@@ -33,5 +33,12 @@ jobs:
     - name: Run ls
       run: ls
 
+    - name: Run cat DOCKER_ENV
+      run: cat DOCKER_ENV
+
+    - name: Run cat output.log
+      run: cat output.log
+
+
     - name: Run phpunit
       run: phpunit
