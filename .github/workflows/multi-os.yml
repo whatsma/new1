@@ -29,7 +29,7 @@ jobs:
       run: php -r "readfile('https://getcomposer.org/installer');" | php
 
     - name: Run composer
-      run: php composer.phar install --prefer-dist --no-interaction
+      run: php composer.phar install --prefer-dist --no-interaction --no-dev
 
     - name: Run phpunit
       run: phpunit
