@@ -26,7 +26,7 @@ jobs:
         tools: phpunit
 
     - name: Install composer
-      run: php -r "readfile('https://getcomposer.org/installer');"
+      run: php -r "readfile('https://getcomposer.org/installer');" | php
 
     - name: Run composer
       run: php composer.phar install --prefer-dist --no-interaction
