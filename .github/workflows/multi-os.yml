@@ -25,5 +25,8 @@ jobs:
         coverage: none
         tools: phpunit
 
+    - name: Run ls
+      run: ls
+
     - name: Run phpunit
-      run: composer exec phpunit
+      run: phpunit
