@@ -1,4 +1,8 @@
-<p align="center"><img src="https://github.com/whatsma/new1/blob/main/logo/zodiac-sign.png" width="400"></p>
+<p align="center">
+  <img src="https://github.com/whatsma/new1/blob/main/logo/zodiac-sign.png"
+       alt="Zodiac Sign Calculator in PHP"
+       width="400" />
+</p>
 
 # Zodiac Sign
 PHP calculator to calculate the zodiac sign for a given day and month.
