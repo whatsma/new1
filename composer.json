@@ -4,7 +4,8 @@
     "type": "package",
     "license": "MIT",
     "scripts": {
-        "test": "phpunit"
+        "test": "phpunit",
+        "phpversion": "php --version"
     },
     "keywords": ["zodiac sign" , "sun sign", "star sign", "astrological sign"],
     "authors": [

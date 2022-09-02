@@ -18,16 +18,16 @@ jobs:
         include:
         - operating-system: 'ubuntu-latest'
           php-versions: '7.2'
-          phpunit-versions: 8
+          phpunit-versions: '8'
         - operating-system: 'ubuntu-latest'
           php-versions: '7.1'
-          phpunit-versions: 7
+          phpunit-versions: '7'
         - operating-system: 'ubuntu-latest'
           php-versions: '7.0'
-          phpunit-versions: 6
+          phpunit-versions: '6'
         - operating-system: 'ubuntu-latest'
           php-versions: '5.6'
-          phpunit-versions: 5
+          phpunit-versions: '5'
     steps:
     - name: Checkout Action
       uses: actions/checkout@v3
@@ -47,6 +47,8 @@ jobs:
     - name: Run php --version
       run: php --version
 
+    - name: Run phpversion
+      run: composer run-script phpversion
 
     - name: Run phpunit --version
       run: composer exec phpunit -- --version
