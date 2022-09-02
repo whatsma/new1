@@ -14,20 +14,20 @@ jobs:
       matrix:
         operating-system: ['ubuntu-latest'] # ['ubuntu-latest', 'windows-latest', 'macos-latest']
         php-versions: ['7.3', '7.4', '8.0', '8.1']
-        phpunit-versions: ['latest']
+        phpunit: 'phpunit:latest'
         include:
         - operating-system: 'ubuntu-latest'
           php-versions: '7.2'
-          phpunit-versions: 8
+          phpunit: phpunit:8
         - operating-system: 'ubuntu-latest'
           php-versions: '7.1'
-          phpunit-versions: 7
+          phpunit: phpunit:7
         - operating-system: 'ubuntu-latest'
           php-versions: '7.0'
-          phpunit-versions: 6
+          phpunit: phpunit:6
         - operating-system: 'ubuntu-latest'
           php-versions: '5.6'
-          phpunit-versions: 5
+          phpunit: phpunit:5
     steps:
     - name: Checkout Action
       uses: actions/checkout@v3
@@ -42,7 +42,7 @@ jobs:
       with:
         php-version: ${{ matrix.php-versions }}
         coverage: none
-        tools: phpunit:${{ matrix.phpunit-versions }}
+        tools: ${{ matrix.phpunit }}
 
     - name: Run phpunit --version
       run: composer exec phpunit -- --version
