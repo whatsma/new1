@@ -39,11 +39,10 @@ jobs:
         coverage: none
         tools: phpunit:${{ matrix.phpunit-versions }}
 
-    - name: Run php --version
-      run: php --version
-
-    - name: Run phpversion via composer
-      run: composer run-script phpversion
+    - name: Show PHP versions
+      run: |
+        php --version
+        composer run-script phpversion
 
     - name: Run phpunit
       run: composer exec phpunit
