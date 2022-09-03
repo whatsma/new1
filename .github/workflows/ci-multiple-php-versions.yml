@@ -46,4 +46,5 @@ jobs:
       run:  composer run-script phpversion
 
     - name: Run phpunit
-      run: composer exec phpunit
+      #run: composer exec phpunit
+      run: phpunit
