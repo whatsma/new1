@@ -13,7 +13,6 @@ jobs:
       fail-fast: false
       matrix:
         operating-system: ['ubuntu-latest', 'windows-latest', 'macos-latest']
-        php-versions: ['8.1']
     steps:
     - name: Checkout Action
       uses: actions/checkout@v3
@@ -21,7 +20,7 @@ jobs:
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
       with:
-        php-version: ${{ matrix.php-versions }}
+        php-version: '8.1'
         coverage: none
         tools: phpunit
 
