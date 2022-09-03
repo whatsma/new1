@@ -8,25 +8,20 @@ on:
 
 jobs:
   run:
-    runs-on: ${{ matrix.operating-system }}
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        operating-system: ['ubuntu-latest']
         php-versions: ['8.1', '8.0', '7.4', '7.3']
         phpunit-versions: ['latest']
         include:
-        - operating-system: 'ubuntu-latest'
-          php-versions: '7.2'
+        - php-versions: '7.2'
           phpunit-versions: '8'
-        - operating-system: 'ubuntu-latest'
-          php-versions: '7.1'
+        - php-versions: '7.1'
           phpunit-versions: '7'
-        - operating-system: 'ubuntu-latest'
-          php-versions: '7.0'
+        - php-versions: '7.0'
           phpunit-versions: '6'
-        - operating-system: 'ubuntu-latest'
-          php-versions: '5.6'
+        - php-versions: '5.6'
           phpunit-versions: '5'
     steps:
     - name: Checkout Action
