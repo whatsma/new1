@@ -8,7 +8,7 @@ on:
 
 jobs:
   run:
-    name: (PHP - ${{ matrix.php-versions }}, phpunit - ${{ matrix.phpunit-versions }})
+    name: run (PHP ${{ matrix.php-versions }}, phpunit ${{ matrix.phpunit-versions }})
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
