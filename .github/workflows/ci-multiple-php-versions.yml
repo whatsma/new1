@@ -37,7 +37,7 @@ jobs:
       with:
         php-version: ${{ matrix.php-versions }}
         coverage: none
-        tools: phpunit:${{ matrix.phpunit-versions }}
+        tools: phpunit:${{ matrix.phpunit-versions }}, composer
 
     - name: Run php --version
       run: php --version
@@ -46,5 +46,4 @@ jobs:
       run:  composer run-script phpversion
 
     - name: Run phpunit
-      #run: composer exec phpunit
-      run: phpunit
+      run: composer exec phpunit
