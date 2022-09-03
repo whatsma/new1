@@ -9,7 +9,6 @@ on:
 
 jobs:
   phpstan:
-    name: PHPStan
     runs-on: ubuntu-22.04
 
     steps:
