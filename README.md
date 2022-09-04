@@ -79,7 +79,7 @@ try {
 // output: "leo"
 ```
 
-## Zodiac Sign Calculator in the wild
+## Zodiac Sign Calculator out there, in the wild:
 
 * [Sun Sign Calculator](https://www.sunsigncalculator.com)
 * [What Zodiac Sign Am I?](https://www.whatzodiacsignami.com)
