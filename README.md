@@ -79,7 +79,7 @@ try {
 
 ## Zodiac Sign Calculator out there, in the wild
 
-* [Sun Sign Calculator](https://www.sunsigncalculator.com)
 * [What Zodiac Sign Am I?](https://www.whatzodiacsignami.com)
+* [Sun Sign Calculator](https://www.sunsigncalculator.com)
 * [What Star Sign Am I?](https://www.whatstarsignami.com)
 * [What Sign Am I?](https://www.whatsignami.com)
