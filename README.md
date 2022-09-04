@@ -38,7 +38,7 @@ Install ZodiacSign using [Composer](https://getcomposer.org/):
 $ composer require whatsma/zodiacsign:^1.0
 ```
 
-ZodiacSign requires PHP 5.6 or later.
+*Note: ZodiacSign requires PHP 5.6 or later.*
 
 ## Usage
 
@@ -79,7 +79,7 @@ try {
 // output: "leo"
 ```
 
-## Zodiac Sign Calculator out there, in the wild:
+## Zodiac Sign Calculator out there, in the wild
 
 * [Sun Sign Calculator](https://www.sunsigncalculator.com)
 * [What Zodiac Sign Am I?](https://www.whatzodiacsignami.com)
