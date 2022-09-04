@@ -40,7 +40,7 @@ $ composer require whatsma/zodiacsign:^1.0
 
 ZodiacSign requires PHP 5.6 or later.
 
-## Overview
+## Usage
 
 Given a month (integer from 1 to 12) and a day (integer from 1 to 31), calculate the zodiac sign.
 
@@ -55,7 +55,7 @@ Raises an InvalidDayException:
 * if the day is invalid (eg is non int, or has a value of 32)
 * if the day is an invalid day of the month, such as 31st of February)
 
-## Example
+### Example
 
 ```php
 <?php
