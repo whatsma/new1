@@ -38,8 +38,6 @@ Install ZodiacSign using [Composer](https://getcomposer.org/):
 $ composer require whatsma/zodiacsign:^1.0
 ```
 
-*Note: ZodiacSign requires PHP 5.6 or later.*
-
 ## Usage
 
 Given a month (integer from 1 to 12) and a day (integer from 1 to 31), calculate the zodiac sign.
