@@ -1,4 +1,4 @@
-name: Unit Tests - Multiple Operating Systems
+name: Multi OS
 
 on:
   push:
