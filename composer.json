@@ -7,7 +7,7 @@
         "test": "phpunit",
         "phpversion": "php --version"
     },
-    "keywords": ["zodiac sign" , "sun sign", "star sign", "astrological sign"],
+    "keywords": ["zodiac", "horoscope", "astrology", "zodiac sign" , "sun sign", "star sign"],
     "authors": [
         {
             "name": "Wha Tsma",
