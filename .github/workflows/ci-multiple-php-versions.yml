@@ -15,21 +15,14 @@ jobs:
       matrix:
         php-versions: ['5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1']
     steps:
-    - name: Checkout Action
-      uses: actions/checkout@v3
+    - uses: actions/checkout@v3
 
-    - name: Setup PHP
-      uses: shivammathur/setup-php@v2
+    - uses: shivammathur/setup-php@v2
       with:
         php-version: ${{ matrix.php-versions }}
         coverage: none
-        tools: phpunit
+        #      tools: phpunit
 
-    - name: php --version
-      run: php --version
-
-    - name: composer install
-      run: composer install --prefer-dist --no-interaction
-
-    - name: composer test
-      run: composer test
+    - run: php --version
+    - run: composer install --prefer-dist --no-interaction
+    - run: composer test
