@@ -16,5 +16,3 @@ jobs:
       - run: composer update --no-interaction --optimize-autoloader
 
       - run: composer lint
-
-      - run: composer lint-np

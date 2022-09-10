@@ -3,8 +3,7 @@
     "description": "Calculates the zodiac sign for a given day and month.",
     "scripts": {
         "test": "phpunit",
-        "lint": "phpstan analyze --level 5 src tests",
-        "lint-np": "phpstan analyze --no-progress --level 5 src tests"
+        "lint": "phpstan analyze --level 5 src tests"
     },
     "type": "package",
     "license": "MIT",
