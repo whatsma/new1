@@ -11,13 +11,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: checkout code
         uses: actions/checkout@v3
 
-      - name: Download dependencies
+      - name: composer update
         run: composer update --no-interaction --optimize-autoloader
 
-      - name: PHPStan
+      - name: phpstan
         uses: docker://oskarstark/phpstan-ga:1.6.0
         with:
           entrypoint: /composer/vendor/bin/phpstan

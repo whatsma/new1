@@ -25,11 +25,11 @@ jobs:
         coverage: none
         tools: phpunit
 
-    - name: Run composer install
-      run: composer install --prefer-dist --no-interaction
-
-    - name: Run php --version
+    - name: php --version
       run: php --version
 
-    - name: Run phpunit
+    - name: composer install
+      run: composer install --prefer-dist --no-interaction
+
+    - name: composer test
       run: composer test
