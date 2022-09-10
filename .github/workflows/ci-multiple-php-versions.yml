@@ -31,8 +31,5 @@ jobs:
     - name: Run php --version
       run: php --version
 
-    - name: Run composer run-script phpversion
-      run:  composer run-script phpversion
-
     - name: Run phpunit
-      run: composer exec phpunit
+      run: composer test
