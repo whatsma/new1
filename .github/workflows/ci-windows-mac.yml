@@ -1,4 +1,4 @@
-name: Mac/Windows
+name: Windows/Mac
 
 on:
   push:
@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        operating-system: ['macos-latest', 'windows-latest']
+        operating-system: ['windows-latest', 'macos-latest']
     steps:
     - name: Checkout Action
       uses: actions/checkout@v3
