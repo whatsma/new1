@@ -27,11 +27,14 @@ jobs:
     - name: composer version
       run: composer --version
 
-    - name: Install composer
-      run: php -r "readfile('https://getcomposer.org/installer');" | php
+      #- name: Install composer
+      #run: php -r "readfile('https://getcomposer.org/installer');" | php
 
+      #- name: Run composer install
+      #run: php composer.phar install --prefer-dist --no-interaction --no-dev
+      
     - name: Run composer install
-      run: php composer.phar install --prefer-dist --no-interaction --no-dev
+      run: composer install --prefer-dist --no-interaction --no-dev
 
     - name: Run phpunit
       run: phpunit
