@@ -13,15 +13,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php-versions: ['8.1', '8.0', '7.4', '7.3', '7.2', '7.1', '7.0', '5.6']
+        php-versions: ['5.6', '7.0', '7.1', '7.2', '7.3', '7.4', '8.0', '8.1']
     steps:
     - name: Checkout Action
       uses: actions/checkout@v3
-
-      #- name: Composer Action
-      #uses: php-actions/composer@v6
-      #with:
-      #  dev: no
 
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
