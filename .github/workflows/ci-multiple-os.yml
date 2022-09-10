@@ -24,6 +24,9 @@ jobs:
         coverage: none
         tools: phpunit
 
+    - name: composer version
+      run: composer --version
+
     - name: Install composer
       run: php -r "readfile('https://getcomposer.org/installer');" | php
 
